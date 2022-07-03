@@ -1,0 +1,60 @@
+.team {
+  background-color: $secondary-background-color;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: $primary-white-color;
+
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.teammate {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @include desktop {
+    padding-bottom: 30px;
+  }
+}
+
+.teammate__name,
+.teammate__description {
+  @include font(500, 16px, 1.19, null);
+
+  text-align: center;
+}
+
+.teammate__name {
+  margin-bottom: 10px;
+}
+
+.teammate__description {
+  font-weight: 400;
+
+  margin-bottom: 16px;
+}

@@ -1,0 +1,41 @@
+.about {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.about__list {
+  display: flex;
+}
+
+.about__item + .about__item {
+  margin-left: 30px;
+}
+
+.about__item--wrap {
+  position: relative;
+}
+
+.about__label {
+  position: absolute;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.about__description {
+  @include font(700, null, 1.14, null);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  color: $primary-white-color;
+}

@@ -1,0 +1,50 @@
+.join {
+  @media screen and (min-width: 480px), (max-width: 1199px) {
+    flex-grow: 1;
+  }
+}
+
+.join-section {
+  margin-bottom: 60px;
+
+  @include desktop {
+    margin-left: 70px;
+    margin-bottom: 0px;
+  }
+}
+
+.join__title {
+  @include font(null, 14px, 1.14, null);
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+
+  margin-bottom: 20px;
+}
+
+.join__list {
+  display: flex;
+  justify-content: center;
+  @include desktop {
+    justify-content: start;
+  }
+}
+
+.join__item + .join__item {
+  margin-left: 10px;
+}
+
+.join__link {
+  background-color: $link-bg-color;
+
+  transition: background-color 250ms $main-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+  }
+}
+
+.join__icon {
+  fill: $primary-white-color;
+}

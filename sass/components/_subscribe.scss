@@ -1,0 +1,78 @@
+.subscribe {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
+
+  @include desktop {
+    //  width: 570px;
+    margin-left: auto;
+  }
+}
+
+.subscribe__form {
+  @include tablet {
+    display: flex;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
+}
+
+.subscribe__input {
+  @include centeredFlex($jc: null);
+
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+
+  @include font(null, 16px, 1.25, null);
+
+  color: $address-footer-color;
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
+}
+
+.subscribe__btn {
+  @include centeredFlex($jc: null);
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 29px;
+
+  letter-spacing: 0.06em;
+
+  transition: box-shadow 250ms $main-timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+
+  fill: currentColor;
+}

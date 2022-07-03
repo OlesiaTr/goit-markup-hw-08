@@ -1,0 +1,26 @@
+.soc-contacts__list {
+  @include centeredFlex($ai: null);
+}
+
+.soc-contacts__item + .soc-contacts__item {
+  margin-left: 10px;
+}
+
+.soc-contacts__link {
+  color: $link-main-color;
+
+  transition: color 250ms $main-timing-function,
+    background-color 250ms $main-timing-function,
+    box-shadow 250ms $main-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.soc-contacts__svg {
+  fill: currentColor;
+}

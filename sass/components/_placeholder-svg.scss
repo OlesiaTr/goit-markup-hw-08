@@ -1,0 +1,11 @@
+.placeholder-svg {
+  @include centeredFlex();
+
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background: $secondary-background-color;
+
+  border-radius: 4px;
+}

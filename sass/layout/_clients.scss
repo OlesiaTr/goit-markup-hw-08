@@ -1,0 +1,57 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
+.clients__link {
+  @include centeredFlex();
+
+  height: 92px;
+
+  color: $link-main-color;
+  fill: $link-main-color;
+
+  box-sizing: inherit;
+  border: 1px solid $link-main-color;
+  border-radius: 4px;
+
+  transition: border 250ms $main-timing-function,
+    fill 250ms $main-timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-text-color;
+    fill: $accent-text-color;
+  }
+
+  @include tablet {
+    width: 226px;
+  }
+
+  @include desktop {
+    width: 170px;
+  }
+}

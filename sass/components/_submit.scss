@@ -1,0 +1,25 @@
+.submit {
+  @include centeredFlex();
+
+  width: 200px;
+  padding: 10px 55px 10px 56px;
+  margin: 0 auto;
+
+  letter-spacing: 0.06em;
+
+  color: $primary-white-color;
+  background-color: $accent-text-color;
+  border-color: transparent;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: background-color 250ms $main-timing-function,
+    box-shadow 250ms $main-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-hover-color;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

@@ -1,0 +1,17 @@
+.title {
+  color: $title-black-color;
+}
+
+.about__title,
+.team__title,
+.clients__title {
+  @include font(700, 28px, 1.17, null);
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  @include desktop {
+    @include font(700, 36px, 1.17, null);
+    margin-bottom: 50px;
+  }
+}
