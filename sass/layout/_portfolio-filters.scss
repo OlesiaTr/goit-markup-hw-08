@@ -1,17 +1,33 @@
 /* ---------------PORTFOLIO------------------- */
 .filters-projects {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @include desktop {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 /* ---------------FILTERS------------------- */
 .filters__list {
-  @include centeredFlex($ai: null);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
-.filters__item:not(:last-child) {
-  margin-right: 8px;
+.filters__item {
+  box-sizing: inherit;
 }
 
 .filters__btn {

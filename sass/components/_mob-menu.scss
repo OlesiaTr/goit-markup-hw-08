@@ -1,0 +1,67 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+
+  background-color: $primary-white-color;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+
+  &.is-hidden {
+    display: none;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 40px;
+  }
+}
+
+.mob-menu__top {
+}
+
+.mob-menu__icon {
+}
+.mob-menu__list {
+}
+
+.mob-menu__item {
+  margin-bottom: 32px;
+}
+
+.menu-bottom {
+}
+.menu-bottom__connect {
+}
+.menu-bottom__list {
+}
+.menu-bottom__tel {
+}
+.menu-bottom__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.mob-soc__list {
+}
+.mob-soc__item {
+}
+.mob-soc__link {
+}

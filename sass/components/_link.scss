@@ -70,4 +70,17 @@
   .header-auth__item & {
     color: $primary-text-color;
   }
+
+  .mob-menu__item &,
+  .menu-bottom__mail & {
+    @include font(500, 24px, 1.17, 0.02em);
+
+    color: $primary-text-color;
+  }
+
+  .menu-bottom__tel & {
+    @include font(500, 34px, 1.18, 0.02em);
+
+    color: $accent-text-color;
+  }
 }
