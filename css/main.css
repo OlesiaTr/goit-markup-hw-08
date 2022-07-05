@@ -72,8 +72,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .about__title,
-  .team__title,
-  .clients__title {
+.team__title,
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -247,9 +247,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.form__input:hover,
-.form__input:focus-within,
-.form__input:not(:placeholder-shown) {
+.form__input:hover, .form__input:focus-within, .form__input:not(:placeholder-shown) {
   outline: none;
   border-color: #2196f3;
 }
@@ -262,8 +260,7 @@ body {
   fill: var(--title-black-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:hover + .form__icon,
-.form__input:focus + .form__icon {
+.form__input:hover + .form__icon, .form__input:focus + .form__icon {
   fill: #2196f3;
 }
 
@@ -335,8 +332,7 @@ textarea {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.join__link:hover,
-.join__link:focus {
+.join__link:hover, .join__link:focus {
   background-color: #2196f3;
 }
 
@@ -347,12 +343,7 @@ textarea {
 .link {
   text-decoration: none;
 }
-.nav__item .link:hover,
-.header-auth__item .link:hover,
-.footer-auth__item .link:hover,
-.nav__item .link:focus,
-.header-auth__item .link:focus,
-.footer-auth__item .link:focus {
+.nav__item .link:hover, .header-auth__item .link:hover, .footer-auth__item .link:hover, .nav__item .link:focus, .header-auth__item .link:focus, .footer-auth__item .link:focus {
   color: #2196f3;
   fill: currentColor;
 }
@@ -361,8 +352,7 @@ textarea {
 }
 .footer-auth__item .link {
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__item .link {
   color: #000000;
@@ -396,15 +386,12 @@ textarea {
     letter-spacing: 0.02em;
   }
 }
-.nav__item .link,
-.header-auth__item .link {
+.nav__item .link, .header-auth__item .link {
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-menu__item .link,
-.menu-bottom__mail .link {
+.mob-menu__item .link, .menu-bottom__mail .link {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -453,8 +440,7 @@ textarea {
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link.inactive:hover::after,
-.link.inactive:focus::after {
+.link.inactive:hover::after, .link.inactive:focus::after {
   transform: scaleX(1);
 }
 
@@ -559,8 +545,7 @@ textarea {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -580,8 +565,7 @@ textarea {
   min-width: 95vw;
   min-height: 95vh;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -612,8 +596,7 @@ textarea {
   background: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__btn:hover,
-.modal__btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   color: #2196f3;
 }
 
@@ -645,12 +628,9 @@ textarea {
 
 .soc-contacts__link {
   color: rgb(175, 177, 184);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-contacts__link:hover,
-.soc-contacts__link:focus {
+.soc-contacts__link:hover, .soc-contacts__link:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -682,11 +662,9 @@ textarea {
   border-color: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submit:hover,
-.submit:focus {
+.submit:hover, .submit:focus {
   background-color: #188ce8;
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -752,8 +730,7 @@ textarea {
   letter-spacing: 0.06em;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe__btn:hover,
-.subscribe__btn:focus {
+.subscribe__btn:hover, .subscribe__btn:focus {
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 320px) and (max-width: 1199px) {
@@ -873,12 +850,11 @@ textarea {
 }
 @media screen and (min-width: 767px) {
   .menu-open__btn,
-  .menu-close__btn {
+.menu-close__btn {
     display: none;
   }
 }
-.menu-open__btn:hover,
-.menu-open__btn:focus,
+.menu-open__btn:hover, .menu-open__btn:focus,
 .menu-close__btn:hover,
 .menu-close__btn:focus {
   color: #2196f3;
@@ -893,49 +869,25 @@ textarea {
   max-width: 100%;
   height: 400px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../images/hero_bg-mob-x1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero_bg-mob-x1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/hero_bg-mob-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero_bg-mob-x2.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     min-width: 768px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/hero_bg-tab-x1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero_bg-tab-x1.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/hero_bg-tab-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero_bg-tab-x2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -944,24 +896,12 @@ textarea {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/hero_bg-x1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero_bg-x1.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/hero_bg-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero_bg-x2.jpg);
   }
 }
 
@@ -998,8 +938,7 @@ textarea {
   padding: 10px 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }
 
@@ -1109,8 +1048,7 @@ textarea {
 }
 
 .team__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
   width: 100%;
@@ -1194,11 +1132,9 @@ textarea {
   box-sizing: inherit;
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
@@ -1255,16 +1191,12 @@ textarea {
   color: #212121;
   background-color: #f5f4fa;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filters__btn:hover,
-.filters__btn:focus {
+.filters__btn:hover, .filters__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects__list {
@@ -1293,10 +1225,8 @@ textarea {
   height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects__link:hover,
-.projects__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.projects__link:hover, .projects__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
@@ -1321,8 +1251,7 @@ textarea {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects__link:hover .projects-wrap__overlay,
-.projects__link:focus .projects-wrap__overlay {
+.projects__link:hover .projects-wrap__overlay, .projects__link:focus .projects-wrap__overlay {
   transform: translateY(0);
 }
 
@@ -1421,4 +1350,4 @@ textarea {
   .footer-auth__item:not(:last-child) {
     margin-bottom: 9px;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
