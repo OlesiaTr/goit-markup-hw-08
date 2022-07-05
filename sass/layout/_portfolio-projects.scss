@@ -37,7 +37,7 @@
 }
 
 .projects-wrap__imgs {
-  min-width: 370px;
+  width: 100%;
 }
 
 .projects-wrap__overlay {
@@ -69,6 +69,10 @@
   @include font(null, 18px, 1.56, null);
 
   color: $primary-white-color;
+
+  @media screen and (max-width: 352px) {
+    width: 100%;
+  }
 }
 
 .projects__container {

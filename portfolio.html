@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a href="./index.html" class="logo link"
           >Web<span class="logo__header--dark">Studio</span></a
@@ -41,6 +41,9 @@
         <ul class="header-auth__list list">
           <li class="header-auth__item">
             <a href="mailto:info@devstudio.com" class="link">
+              <svg class="header-auth__icon--tab" width="14" height="10">
+                <use href="./images/symbol-defs.svg#icon-envelope-tab"></use>
+              </svg>
               <svg class="header-auth__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
@@ -48,6 +51,9 @@
           </li>
           <li class="header-auth__item">
             <a href="tel:+380961111111" class="link">
+              <svg class="header-auth__icon--tab" width="10" height="14">
+                <use href="./images/symbol-defs.svg#icon-smartphone-tab"></use>
+              </svg>
               <svg class="header-auth__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
@@ -55,8 +61,93 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-open__btn"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="mob-menu__icon"
+              href="./images/symbol-defs.svg#icon-menu-open"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button
+              type="button"
+              class="menu-close__btn"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="mob-menu__icon"
+                  href="./images/symbol-defs.svg#icon-menu-close"
+                ></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="link inactive">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="link active">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="link inactive">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-bottom">
+            <div class="menu-bottom__connect">
+              <ul class="menu-bottom__list list">
+                <li class="menu-bottom__tel">
+                  <a href="tel:+380961111111" class="link">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-bottom__mail">
+                  <a href="mailto:info@devstudio.com" class="link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-soc__list list">
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="">Instagram</a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="">Twitter</a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="">Facebook</a>
+                </li>
+                <li class="mob-soc__item">
+                  <a class="mob-soc__link link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Main -->
     <main>
@@ -418,5 +509,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

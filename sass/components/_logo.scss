@@ -1,5 +1,17 @@
 .logo {
   font-family: "Raleway", sans-serif;
   color: $accent-text-color;
-  @include font(null, 26px, 1.19, null);
+
+  @include font(null, 24px, 1.17, null);
+
+  .header & {
+    @include tablet {
+      margin-right: 88px;
+    }
+
+    @include desktop {
+      margin-right: 93px;
+      @include font(null, 26px, 1.19, null);
+    }
+  }
 }

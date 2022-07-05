@@ -38,10 +38,14 @@
   @include font(900, 26px, 1.62, 0.06em);
   text-transform: uppercase;
 
-  width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    min-width: 305px;
+    max-width: 360px;
+  }
 
   @include desktop {
     width: 696px;

@@ -29,7 +29,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .list {
@@ -287,6 +286,69 @@ textarea {
   color: #2196f3;
   fill: currentColor;
 }
+.address .link {
+  color: #ffffff;
+}
+.footer-auth__item .link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__item .link {
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .nav__item .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+.header-auth__item .link {
+  color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .header-auth__item .link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-auth__item .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+.nav__item .link, .header-auth__item .link {
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu__item .link, .menu-bottom__mail .link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.menu-bottom__tel .link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+@media screen and (max-width: 352px) {
+  .menu-bottom__tel .link {
+    font-size: 30px;
+  }
+}
 .link.active {
   color: #2196f3;
   position: relative;
@@ -320,39 +382,24 @@ textarea {
 .link.inactive:hover::after, .link.inactive:focus::after {
   transform: scaleX(1);
 }
-.address .link {
-  color: #ffffff;
-}
-.footer-auth__item .link {
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav__item .link {
-  color: #000000;
-}
-.header-auth__item .link {
-  color: #757575;
-}
-.mob-menu__item .link, .menu-bottom__mail .link {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-.menu-bottom__tel .link {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-}
 
 .logo {
   font-family: "Raleway", sans-serif;
   color: #2196f3;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 768px) {
+  .header .logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .mob-menu {
@@ -379,7 +426,6 @@ textarea {
   }
 }
 .mob-menu .container {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
@@ -387,16 +433,48 @@ textarea {
   padding-left: 40px;
 }
 
+.mob-menu__top,
+.menu-bottom {
+  width: 100%;
+}
+
+.mob-menu__icon {
+  fill: currentColor;
+}
+
 .mob-menu__item {
   margin-bottom: 32px;
 }
 
-.menu-bottom__mail {
+.menu-bottom__list {
+  margin-bottom: 64px;
+}
+
+.menu-bottom__tel {
+  margin-bottom: 32px;
+}
+
+.mob-soc__list {
+  display: flex;
+}
+
+.mob-soc__item + .mob-soc__item {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-soc__link {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #2196f3;
+}
+@media screen and (max-width: 399px) {
+  .mob-soc__link {
+    font-size: 13px;
+  }
 }
 
 .backdrop {
@@ -582,7 +660,7 @@ textarea {
 .subscribe__btn:hover, .subscribe__btn:focus {
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .subscribe__btn {
     margin-left: auto;
     margin-right: auto;
@@ -610,9 +688,6 @@ textarea {
     display: flex;
     align-items: center;
   }
-  .header .logo {
-    margin-right: 93px;
-  }
 }
 
 .logo__header--dark {
@@ -638,48 +713,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .nav__item:not(:last-child) {
     margin-right: 50px;
-  }
-}
-
-.nav__item,
-.header-auth__item {
-  display: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav__item,
-.header-auth__item {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav__item,
-.header-auth__item {
-    display: flex;
-    margin-left: auto;
-  }
-}
-.nav__item .link,
-.header-auth__item .link {
-  display: flex;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .nav__item .link,
-.header-auth__item .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -748,6 +781,11 @@ textarea {
     display: none;
   }
 }
+.menu-open__btn:hover, .menu-open__btn:focus,
+.menu-close__btn:hover,
+.menu-close__btn:focus {
+  color: #2196f3;
+}
 
 .hero {
   text-align: center;
@@ -784,10 +822,15 @@ textarea {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .hero__title {
+    min-width: 305px;
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1103,7 +1146,7 @@ textarea {
 }
 
 .projects-wrap__imgs {
-  min-width: 370px;
+  width: 100%;
 }
 
 .projects-wrap__overlay {
@@ -1127,6 +1170,11 @@ textarea {
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
+}
+@media screen and (max-width: 352px) {
+  .projects-wrap__description {
+    width: 100%;
+  }
 }
 
 .projects__container {
