@@ -3,10 +3,34 @@
 }
 
 .checkbox__label {
-  @include centeredFlex($jc: space-evenly);
   position: relative;
 
-  line-height: 1.71;
+  @include centeredFlex($jc: space-evenly, $ai: null);
+  flex-wrap: wrap;
+
+  @include font(null, 10px, 1.17, null);
+
+  @media screen and (min-width: 332px) {
+    @include font(null, 11px, 1.17, null);
+  }
+
+  @media screen and (min-width: 351px) {
+    @include font(null, 12px, 1.17, null);
+  }
+
+  @media screen and (min-width: 375px) {
+    @include centeredFlex($jc: space-evenly, $ai: flex-end);
+  }
+
+  @media screen and (min-width: 995px) {
+    @include font(null, 14px, 1.71, null);
+    @include centeredFlex($jc: space-evenly);
+  }
+
+  @include desktop {
+    @include font(null, 14px, 1.71, null);
+    @include centeredFlex($jc: space-evenly);
+  }
 
   &::before {
     content: "";

@@ -37,22 +37,17 @@
 .mob-menu__icon {
   fill: currentColor;
 }
-.mob-menu__list {
-}
 
 .mob-menu__item {
   margin-bottom: 32px;
 }
 
-.menu-bottom__connect {
-}
 .menu-bottom__list {
   margin-bottom: 64px;
 }
+
 .menu-bottom__tel {
   margin-bottom: 32px;
-}
-.menu-bottom__mail {
 }
 
 .mob-soc__list {
@@ -66,6 +61,7 @@
     border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
+
 .mob-soc__link {
   @media screen and (max-width: 399px) {
     font-size: 13px;

@@ -95,11 +95,49 @@ body {
 }
 
 .checkbox__label {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-  line-height: 1.71;
+  flex-wrap: wrap;
+  font-size: 10px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 332px) {
+  .checkbox__label {
+    font-size: 11px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 351px) {
+  .checkbox__label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 375px) {
+  .checkbox__label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 995px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .checkbox__label::before {
   content: "";
@@ -154,11 +192,25 @@ body {
 
 .form__title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 19px;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (min-width: 480px) {
+  .form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form {
@@ -224,6 +276,14 @@ textarea {
   padding: 12px 16px;
   width: 100%;
   height: 120px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+@media screen and (min-width: 1200px) {
+  .comment__text {
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
 }
 .comment__text::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -501,8 +561,8 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 95vw;
+  min-height: 95vh;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -510,6 +570,18 @@ textarea {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__btn {
