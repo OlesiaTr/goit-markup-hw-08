@@ -56,7 +56,11 @@
       fill 250ms $main-timing-function;
   }
 
-  .mob-menu__item &,
+  .mob-menu__item & {
+    color: $primary-text-color;
+    @include font(500, 40px, 1.175, 0.02em);
+  }
+
   .menu-bottom__mail & {
     @include font(500, 24px, 1.17, 0.02em);
 

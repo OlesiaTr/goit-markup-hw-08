@@ -3,9 +3,13 @@
     flex-grow: 1;
   }
 
+  @include tablet {
+    margin-top: 60px;
+  }
+
   @include desktop {
-    //  width: 570px;
     margin-left: auto;
+    margin-top: 0;
   }
 }
 

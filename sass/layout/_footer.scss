@@ -3,26 +3,32 @@
 
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer__flex {
-  text-align: center;
+  & .container {
+    text-align: center;
 
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    @include tablet {
+      @include centeredFlex($jc: null, $ai: baseline);
 
-  @include desktop {
-    @include centeredFlex($jc: null, $ai: baseline);
-    text-align: start;
+      flex-wrap: wrap;
+    }
+
+    @include desktop {
+      text-align: start;
+    }
   }
 }
 
 .footer__address {
   min-width: 232px;
-  @media screen and (min-width: 480px), (max-width: 1199px) {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     flex-grow: 1;
+  }
+
+  @include tablet {
+    margin-bottom: 0;
   }
 }
 
@@ -33,12 +39,7 @@
 .address {
   line-height: 1.71;
   margin-top: 20px;
-  margin-bottom: 60px;
   font-style: normal;
-
-  @include desktop {
-    margin-bottom: 0;
-  }
 }
 
 .address__name {

@@ -1,17 +1,27 @@
 .join {
-  @media screen and (min-width: 480px), (max-width: 1199px) {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     flex-grow: 1;
   }
-}
 
-.join-section {
-  margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
 
   @include desktop {
     margin-left: 70px;
-    margin-bottom: 0px;
   }
 }
+
+// .join-section {
+//   margin-bottom: 60px;
+
+//   @include desktop {
+//     margin-left: 70px;
+//     margin-bottom: 0px;
+//   }
+// }
 
 .join__title {
   @include font(null, 14px, 1.14, null);
